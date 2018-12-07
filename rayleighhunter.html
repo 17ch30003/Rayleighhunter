@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relic hunter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+* {box-sizing: border-box; font-family:Roboto;}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius:5px;
+    background: #f1f1f1;
+    box-shadow: none;
+
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    box-shadow: 1px 1px 2px black, 0 0 125px pink, 0 0 25px darkred;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 80%;
+  }
+#closeup {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: maroon;
+    opacity: 1;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><div class="alert alert-success">
+      <strong><h2>Rayleigh Hunter</h2></strong>
+      </div>
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" align="right">
+        <a class="nav-link" href="#"><button class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><h2> Register </h2></button></a>
+      </li>
+      <li class="nav-item" align="right">
+        <a class="nav-link" href="#"><button class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-log-in"></span><h2>&nbspSign - in&nbsp</h2></button></a>
+      </li>
+    </ul>
+  </div> 
+</nav>
+  	<div id="demo" class="carousel slide" data-ride="carousel">
+
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+      	<h2>Heading</h2><br>
+      	<p>Enter a short description</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago">
+      <div class="carousel-caption">
+      	<h2>Heading</h2><br>
+      	<p>Enter a short description</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York">
+      <div class="carousel-caption">
+      	<h2>Heading</h2><br>
+      	<p>Enter a short description</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+    <div class="modal fade" id="myModal">
+    	<div class="modal-dialog modal-dialog-centered">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h1 class="modal-title">Sign - Up</h1>
+    				<button type="button" class="close" data-dismiss="modal" id="closeup">&times;</button>
+    			</div>
+
+            <form method="post" autocomplete="off">
+    		<div class="modal-body">
+    			<label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="Gender"><b>Gender</b></label><br><br>
+                <input type="radio" name="Gender" value:"male">  <b>Male</b> <input type="radio" name="Gender" value:"female"> <b>Female</b> <input type="radio" name="Gender" value:"Other" checked> <b>Other</b><br><br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+               <label>
+               <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+               </label>
+
+               <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+           </div>
+
+           <div class="modal-footer">
+           	<button type="submit" class="btn btn-success btn-lg"><h2>Sign - up</h2></button>
+           	<button type="button" data-dismiss="modal" class="btn btn-danger btn-lg"><h2>Cancel</h2></button>
+           </div>
+           </form>
+           </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1">
+    	<div class="modal-dialog modal-dialog-centered">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h1 class="modal-title">Log - In</h1>
+    				<button type="button" class="close" data-dismiss="modal" id="closeup">&times;</button>
+    			</div>
+
+            <form method="post" autocomplete="off">
+    		<div class="modal-body">
+    			<div class="imgcontainer">   			
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+                <label for="email"><b>Username</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+ 
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit" class="btn btn-success btn-block"><h2>Log - In</h2></button><br>
+      
+                <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+           </div>
+
+           <div class="modal-footer">
+           	<button type="button" data-dismiss="modal" class="btn btn-danger btn-lg"><h2>Cancel</h2></button>
+           </div>
+           </form>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
